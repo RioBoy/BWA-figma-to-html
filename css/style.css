@@ -1,11 +1,9 @@
-/* Google Fonts */
 /* Light */
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: local('Poppins Light'), local('Poppins-Light'),
-    url('../fonts/Poppins-Light.ttf') format('ttf');
+  src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
 }
 
 /* Reguler */
@@ -13,8 +11,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: local('Poppins Regular'), local('Poppins-Regular'),
-    url('../fonts/Poppins-Regular.ttf') format('ttf');
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 /* Medium */
@@ -22,8 +19,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  src: local('Poppins Medium'), local('Poppins-Medium'),
-    url('../fonts/Poppins-Medium.ttf') format('ttf');
+  src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
 }
 
 /* SemiBold */
@@ -31,8 +27,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
-    url('../fonts/Poppins-SemiBold.ttf') format('ttf');
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
 /* Bold */
@@ -40,10 +35,117 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  src: local('Poppins Bold'), local('Poppins-Bold'),
-    url('../fonts/Poppins-Bold.ttf') format('ttf');
+  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Nunito/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+/* Color */
+:root {
+  --bs-black: #232631;
+  --bs-gray-one: #858585;
+  --bs-button-secondary: #5a4fcf;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Custom Gap */
+.custom-gap-3 {
+  gap: 12px;
+}
+
+/* Custom Font */
+.custom-text-3xl {
+  font-size: 28px;
+}
+
+.navbar-brand img {
+  height: 34px;
+  width: 34px;
+}
+
+.navbar-brand span {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+}
+
+.navbar .nav-item a.nav-link {
+  font-weight: 500;
+  color: var(--bs-black);
+  margin-right: 30px;
+  padding: 0;
+  position: relative;
+}
+
+.navbar .nav-item a.nav-link:not(.dropdown-toggle):after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border: 2px solid var(--bs-button-secondary);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar .nav-item a.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.dropdown-item {
+  font-weight: 400;
+  color: var(--bs-black);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: var(--bs-button-secondary);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar input.search {
+  border: none;
+  padding: 16px;
+  text-align: center;
+  width: 322px;
+}
+
+.navbar input.search::placeholder {
+  font-weight: 500;
+  color: var(--bs-gray-one);
+}
+
+.navbar i.icon-search {
+  font-size: 20px;
+  color: var(--bs-gray-one);
+  left: 5%;
+}
+
+.btn-login {
+  border: none;
+  color: var(--bs-button-secondary);
+  background-color: rgba(90, 79, 207, 0.1);
+  padding: 16px 28px;
+  border-radius: 12px;
+  margin-left: 20px;
+}
+
+.btn-login:hover {
+  background-color: var(--bs-button-secondary);
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
