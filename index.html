@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resto Restaurant Landing Page</title>
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link href="css/style.css" rel="stylesheet">
@@ -44,7 +45,7 @@
                     </li>
                 </ul>
                 <a class="navbar-brand mx-auto d-flex align-items-center custom-gap-3" href="#">
-                    <img src="img/icon/home.png" alt="Home" class="d-inline-block align-text-top">
+                    <img src="img/icon/home.svg" alt="Home" class="d-inline-block align-text-top">
                     <span class="custom-text-3xl">Resto</span>
                 </a>
                 <form class="d-flex align-items-center position-relative" role="search">
@@ -60,7 +61,62 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Ads Start -->
+    <section class="ads position-relative">
+        <!-- Swiper Slider Start -->
+        <div class="custom-margin-left">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/content/image1.jpg" alt="Ads" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/content/image1.jpg" alt="Ads" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/content/image1.jpg" alt="Ads" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper Slider End -->
+
+        <!-- Ads Card Start -->
+        <div class="container">
+            <div class="card position-absolute top-50 custom-card border-0">
+                <div class="card-body">
+                    <div class="icon-star">
+                        <ul class="d-flex list-unstyled align-items-center mb-1">
+                            <li><img src="img/icon/star.svg" alt="Star"></li>
+                            <li><img src="img/icon/star.svg" alt="Star"></li>
+                            <li><img src="img/icon/star.svg" alt="Star"></li>
+                            <li><img src="img/icon/star.svg" alt="Star"></li>
+                            <li><img src="img/icon/star.svg" alt="Star"></li>
+                            <li>
+                                <p class="mb-0 custom-text-lg mt-1">5.0 <span class="custom-text-base">(5.2K+)</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5 class="color-primary custom-text-xl fw-semibold mb-1">Padang Restaurant</h5>
+                    <h6 class="color-secondary custom-text-lg fw-semibold mb-1">IDR 49.999 - IDR 560.000</h6>
+                    <p class="color-secondary custom-text-base d-flex align-items-center gap-2 mb-0"><img
+                            src="img/icon/location.svg" alt="Location"> Padang,
+                        Indonesia</p>
+                    <button type="button" class="custom-card-button fw-semibold">Make Reservation <img
+                            src="img/icon/icon-right.svg" alt="Right"></button>
+                    <p class="color-secondary custom-text-base d-flex align-items-center mb-0 gap-2"><img
+                            src="img/icon/info-square.svg" alt="Information"> No extra cost</p>
+                </div>
+            </div>
+        </div>
+        <!-- Ads Card End -->
+    </section>
+    <!-- Ads End -->
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
